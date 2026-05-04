@@ -9,7 +9,7 @@ The Ship is a unique 2006 first-person game where players are tasked with murder
 ![architecture](architecture.png)
 
 ## Demo
-<video controls src="https://github.com/xp101t/TheShip/raw/refs/heads/main/demo.mp4" title="demo" width="100%"></video>
+<video controls src="https://youtu.be/cD6FBpWwidI" title="demo" width="100%"></video>
 
 ## Usage
 When a beacon connects to the C2, a corresponding bot will spawn in-game. Interacting with the bot, then pressing `ESC` will open a command execution menu. If a command is executed, the output will be displayed in the developer console (`~`).
@@ -54,14 +54,16 @@ https://www.sourcemod.net/smdrop/1.8/sourcemod-1.8.0-git6050-windows.zip
 
 5. Copy `bridge.sp` to `...\steamcmd\the_ship_server\ship\addons\sourcemod\scripting\`.
 
-6. Compile the script file and move it to plugins.
+6. Replace `C2_IP` with your C2.
+
+7. Compile the script file and move it to plugins.
 ```
 cd steamcmd\the_ship_server\ship\addons\sourcemod\scripting
 .\spcomp.exe .\bridge.sp
 mv .\bridge.smx ..\plugins\
 ```
 
-7. Start The Ship dedicated server
+8. Start The Ship dedicated server
 ```
 cd steamcmd\the_ship_server
 .\srcds.exe -console -game ship -ip 0.0.0.0 +maxplayers 25 +map batavier +sv_lan 1
