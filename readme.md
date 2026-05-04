@@ -9,7 +9,7 @@ The Ship is a unique 2006 first-person game where players are tasked with murder
 ![architecture](architecture.png)
 
 ## Demo
-<video controls src="demo.mp4" title="Title"></video>
+<video controls src="https://raw.githubusercontent.com/xp101t/TheShip/main/demo.mp4" title="demo" width="100%"></video>
 
 ## Usage
 When a beacon connects to the C2, a corresponding bot will spawn in-game. Interacting with the bot, then pressing `ESC` will open a command execution menu. If a command is executed, the output will be displayed in the developer console (`~`).
